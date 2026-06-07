@@ -1,10 +1,13 @@
 import { ProtectedRoute } from './components/ProtectedRoute'
+import { NavigationProvider } from './context/NavigationContext'
 import { Home } from './pages/Home'
 
 function App() {
   return (
     <ProtectedRoute>
-      <Home />
+      <NavigationProvider>
+        <Home />
+      </NavigationProvider>
     </ProtectedRoute>
   )
 }

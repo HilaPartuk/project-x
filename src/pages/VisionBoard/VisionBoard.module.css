@@ -1,0 +1,92 @@
+.page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2d2419;
+  margin: 0;
+  font-family: 'Georgia', serif;
+}
+
+.uploadButton {
+  padding: 0.75rem 1.5rem;
+  background: #d4a574;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.95rem;
+}
+
+.uploadButton:hover {
+  background: #c9924a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(212, 165, 116, 0.3);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.imageCard {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  aspect-ratio: 1;
+  background: #f5ede4;
+  border: 2px solid #e8ddd2;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.imageCard:hover {
+  border-color: #d4a574;
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(212, 165, 116, 0.2);
+}
+
+.placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #9b8877;
+}
+
+.emptyIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.emptyText {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
