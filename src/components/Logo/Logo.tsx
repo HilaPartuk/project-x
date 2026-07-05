@@ -9,8 +9,10 @@ export function Logo() {
         xmlns="http://www.w3.org/2000/svg"
         style={{ flexShrink: 0 }}
       >
-        <circle cx="12" cy="12" r="11" stroke="#8b9a7f" strokeWidth="1.5"/>
-        <path d="M8 5v14l11-7z" fill="#8b9a7f"/>
+        <rect x="3" y="6" width="18" height="12" rx="1" stroke="#8b9a7f" strokeWidth="1.5"/>
+        <line x1="6" y1="6" x2="6" y2="18" stroke="#8b9a7f" strokeWidth="1"/>
+        <line x1="12" y1="6" x2="12" y2="18" stroke="#8b9a7f" strokeWidth="1"/>
+        <line x1="18" y1="6" x2="18" y2="18" stroke="#8b9a7f" strokeWidth="1"/>
       </svg>
       <div style={{ fontFamily: "'Crimson Text', serif", fontSize: '1.1rem', color: '#8b9a7f', fontWeight: 400, letterSpacing: '1.5px' }}>
         CinematiX
