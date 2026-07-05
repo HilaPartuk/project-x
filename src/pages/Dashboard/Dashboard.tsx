@@ -5,8 +5,8 @@ export function Dashboard() {
   return (
     <div className={styles.page}>
       <div className={styles.header}>
-        <h1 className={styles.title}>Welcome back, Hila 👋</h1>
-        <p className={styles.subtitle}>Your entrepreneurial journey dashboard</p>
+        <h1 className={styles.title}>Welcome back, Hila</h1>
+        <p className={styles.subtitle}>Your entrepreneurial journey at a glance</p>
       </div>
 
       <div className={styles.grid}>
@@ -26,7 +26,7 @@ export function Dashboard() {
 
       <div className={styles.section}>
         <h2 className={styles.sectionTitle}>
-          <span>💡</span> Recent Ideas
+          Recent Ideas
         </h2>
         <div className={styles.recentIdeas}>
           <IdeaCard
