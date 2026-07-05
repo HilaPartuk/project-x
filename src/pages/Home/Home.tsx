@@ -1,5 +1,5 @@
 import { useNavigation } from '../../context/NavigationContext'
-import { Sidebar } from '../../components/Sidebar'
+import { Logo } from '../../components/Logo'
 import { Dashboard } from '../Dashboard'
 import { Ideas } from '../Ideas'
 import { VisionBoard } from '../VisionBoard'
@@ -26,8 +26,30 @@ export function Home() {
 
   if (currentPage === 'dashboard' || currentPage === 'ideas' || currentPage === 'vision-board' || currentPage === 'roadmap') {
     return (
-      <div className={styles.layout}>
-        <Sidebar />
+      <div className={styles.innerLayout}>
+        <nav className={styles.topBar}>
+          <Logo />
+          <div className={styles.navLinks}>
+            <button 
+              className={styles.navLink}
+              onClick={() => setCurrentPage('ideas')}
+            >
+              Ideas
+            </button>
+            <button 
+              className={styles.navLink}
+              onClick={() => setCurrentPage('vision-board')}
+            >
+              Inspiration
+            </button>
+            <button 
+              className={styles.navLink}
+              onClick={() => setCurrentPage('roadmap')}
+            >
+              Roadmap
+            </button>
+          </div>
+        </nav>
         <main className={styles.main}>
           {renderPage()}
         </main>
@@ -45,54 +67,63 @@ interface HeroSectionProps {
 function HeroSection({ setCurrentPage }: HeroSectionProps) {
   return (
     <section className={styles.heroSection}>
-      <div className={styles.heroBackground} />
+      <div className={styles.backgroundShapes}>
+        <div className={styles.shape1} />
+        <div className={styles.shape2} />
+      </div>
       
+      <nav className={styles.heroTopBar}>
+        <Logo />
+        <div className={styles.heroNavLinks}>
+          <button className={styles.heroNavLink}>Ideas</button>
+          <button className={styles.heroNavLink}>Inspiration</button>
+          <button className={styles.heroNavLink}>Roadmap</button>
+        </div>
+      </nav>
+
       <div className={styles.heroContent}>
-        <div className={styles.topBar}>
-          <h1 className={styles.logo}>CinematiX 🎬</h1>
-          <div className={styles.navButtons}>
+        <div className={styles.heroText}>
+          <h1 className={styles.heroTitle}>
+            Turn your <span>vision</span> into <span>reality</span>
+          </h1>
+          <p className={styles.heroSubtitle}>
+            Your personal operating system for entrepreneurship. Capture ideas, organize inspiration, and execute your dreams with intention.
+          </p>
+          <div className={styles.ctaGroup}>
             <button 
-              className={styles.navButton}
+              className={styles.ctaPrimary}
+              onClick={() => setCurrentPage('dashboard')}
+            >
+              Start Building
+            </button>
+            <button 
+              className={styles.ctaSecondary}
               onClick={() => setCurrentPage('ideas')}
             >
               Explore Ideas
             </button>
-            <button 
-              className={styles.navButton}
-              onClick={() => setCurrentPage('vision-board')}
-            >
-              Vision Board
-            </button>
-            <button 
-              className={styles.navButton}
-              onClick={() => setCurrentPage('roadmap')}
-            >
-              Roadmap
-            </button>
+          </div>
+          
+          <div className={styles.statsPreview}>
+            <div className={styles.statItem}>
+              <div className={styles.statNumber}>12+</div>
+              <div className={styles.statLabel}>Active Ideas</div>
+            </div>
+            <div className={styles.statItem}>
+              <div className={styles.statNumber}>3</div>
+              <div className={styles.statLabel}>Vision Boards</div>
+            </div>
+            <div className={styles.statItem}>
+              <div className={styles.statNumber}>100%</div>
+              <div className={styles.statLabel}>Focus</div>
+            </div>
           </div>
         </div>
+      </div>
 
-        <div className={styles.mainContent}>
-          <div className={styles.heroText}>
-            <h2 className={styles.heroTitle}>
-              Build lasting ideas, one day at a time
-            </h2>
-            <p className={styles.heroSubtitle}>
-              CinematiX is your personal gateway to entrepreneurship. Capture inspiration, organize your vision, and execute your dreams.
-            </p>
-            <button 
-              className={styles.ctaButton}
-              onClick={() => setCurrentPage('dashboard')}
-            >
-              Get Started ➜
-            </button>
-          </div>
-        </div>
-
-        <div className={styles.scrollHint}>
-          <span>Scroll to explore</span>
-          <span className={styles.scrollIcon}>↓</span>
-        </div>
+      <div className={styles.scrollHint}>
+        <span>Explore your journey</span>
+        <span className={styles.scrollIcon}>↓</span>
       </div>
     </section>
   )
