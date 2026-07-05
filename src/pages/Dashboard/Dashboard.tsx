@@ -5,47 +5,47 @@ export function Dashboard() {
   return (
     <div className={styles.page}>
       <div className={styles.header}>
-        <h1 className={styles.title}>ברוכה חזרה, הילה 👋</h1>
-        <p className={styles.subtitle}>מערכת ניהול של הסיפור היזמי שלך</p>
+        <h1 className={styles.title}>Welcome back, Hila 👋</h1>
+        <p className={styles.subtitle}>Your entrepreneurial journey dashboard</p>
       </div>
 
       <div className={styles.grid}>
         <div className={styles.statCard}>
           <p className={styles.statNumber}>12</p>
-          <p className={styles.statLabel}>רעיונות בסך הכל</p>
+          <p className={styles.statLabel}>Total Ideas</p>
         </div>
         <div className={styles.statCard}>
           <p className={styles.statNumber}>3</p>
-          <p className={styles.statLabel}>לוחות השראה</p>
+          <p className={styles.statLabel}>Vision Boards</p>
         </div>
         <div className={styles.statCard}>
           <p className={styles.statNumber}>7</p>
-          <p className={styles.statLabel}>נקודות דרך</p>
+          <p className={styles.statLabel}>Roadmap Items</p>
         </div>
       </div>
 
       <div className={styles.section}>
         <h2 className={styles.sectionTitle}>
-          <span>💡</span> רעיונות אחרונים
+          <span>💡</span> Recent Ideas
         </h2>
         <div className={styles.recentIdeas}>
           <IdeaCard
-            title="כלי AI למייסדי סטארטאפ"
-            description="פלטפורמה המסייעת למייסדים לאמת רעיונות ולהתחבר למנטורים"
+            title="AI-powered tool for startup founders"
+            description="A platform that helps founders validate ideas and connect with mentors"
             category="SaaS"
-            date="15 בדצמבר, 2024"
+            date="Dec 15, 2024"
           />
           <IdeaCard
-            title="שוק קהילתי ליוצרים"
-            description="אפשרות ליוצרים למכור מוצרים דיגיטליים בשוק אחוד"
-            category="קהילה"
-            date="10 בדצמבר, 2024"
+            title="Community marketplace for creators"
+            description="Enable creators to sell digital products in a unified marketplace"
+            category="Community"
+            date="Dec 10, 2024"
           />
           <IdeaCard
-            title="כלי בדיקת מותג אישי"
-            description="הערכה מהירה והמלצות למיתוג אישי"
-            category="כלים"
-            date="5 בדצמבר, 2024"
+            title="Personal brand audit tool"
+            description="Quick assessment and recommendations for personal branding"
+            category="Tools"
+            date="Dec 5, 2024"
           />
         </div>
       </div>

@@ -2,7 +2,7 @@
   padding: 3rem 2.5rem;
   max-width: 1100px;
   margin: 0 auto;
-  background: linear-gradient(135deg, #f8f7f5 0%, #ede8e3 100%);
+  background: linear-gradient(135deg, #faf8f3 0%, #f3ede4 100%);
   min-height: 100vh;
 }
 
@@ -13,9 +13,9 @@
 .title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #2d1f1a;
+  color: #1a1815;
   margin: 0 0 0.5rem;
-  font-family: 'Georgia', serif;
+  font-family: 'Playfair Display', serif;
   letter-spacing: -0.5px;
 }
 
@@ -35,7 +35,7 @@
 
 .statCard {
   background: #fff;
-  border: 1px solid #d9cfc3;
+  border: 1px solid #e8dfd5;
   border-radius: 12px;
   padding: 2rem;
   text-align: center;
@@ -44,17 +44,17 @@
 }
 
 .statCard:hover {
-  border-color: #c4a574;
-  box-shadow: 0 8px 20px rgba(196, 165, 116, 0.12);
+  border-color: #a89dc9;
+  box-shadow: 0 8px 20px rgba(168, 157, 201, 0.12);
   transform: translateY(-2px);
 }
 
 .statNumber {
   font-size: 2.8rem;
   font-weight: 700;
-  color: #8b6f47;
+  color: #8b9a7f;
   margin: 0;
-  font-family: 'Georgia', serif;
+  font-family: 'Playfair Display', serif;
 }
 
 .statLabel {
@@ -71,12 +71,12 @@
 .sectionTitle {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #2d1f1a;
+  color: #1a1815;
   margin: 0 0 1.75rem;
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  font-family: 'Georgia', serif;
+  font-family: 'Playfair Display', serif;
 }
 
 .recentIdeas {
@@ -91,6 +91,6 @@
   color: #6b6158;
   background: #fff;
   border-radius: 12px;
-  border: 2px dashed #d9cfc3;
+  border: 2px dashed #e8dfd5;
   font-size: 1rem;
 }

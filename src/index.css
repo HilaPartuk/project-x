@@ -1,17 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap');
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
-html {
-  direction: rtl;
-}
-
 body {
   margin: 0;
-  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #f8f7f5;
+  background: #faf8f3;
   color: #1a1815;
 }
 
@@ -25,26 +23,26 @@ code {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f8f7f5;
+  background: #faf8f3;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #b8a896;
+  background: #d4c4b0;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #9d8b7d;
+  background: #b8a896;
 }
 
 /* CSS Variables for Design System */
 :root {
-  --color-primary: #2d1f1a;      /* Deep charcoal */
-  --color-secondary: #8b6f47;    /* Warm gold */
-  --color-accent: #c4a574;       /* Light gold */
-  --color-bg-light: #f8f7f5;     /* Off-white */
-  --color-bg-alt: #ede8e3;       /* Warm beige */
-  --color-border: #d9cfc3;       /* Soft gray-beige */
+  --color-primary: #8b9a7f;      /* Soft sage green */
+  --color-secondary: #a89dc9;    /* Soft purple/lavender */
+  --color-accent: #d4c4b0;       /* Warm cream/beige */
+  --color-bg-light: #faf8f3;     /* Off-white/cream */
+  --color-bg-alt: #f3ede4;       /* Warm beige */
+  --color-border: #e8dfd5;       /* Soft border */
   --color-text: #1a1815;         /* Dark text */
   --color-text-muted: #6b6158;   /* Muted text */
   

@@ -1,7 +1,7 @@
 .sidebar {
   width: 240px;
-  background: linear-gradient(180deg, #2d1f1a 0%, #3d2d22 100%);
-  border-right: 1px solid rgba(196, 165, 116, 0.2);
+  background: linear-gradient(180deg, #faf8f3 0%, #f3ede4 100%);
+  border-right: 1px solid #e8dfd5;
   padding: 2rem 0;
   display: flex;
   flex-direction: column;
@@ -14,16 +14,16 @@
 
 .logo {
   padding: 0 1.5rem 2rem;
-  border-bottom: 1px solid rgba(196, 165, 116, 0.2);
+  border-bottom: 1px solid #e8dfd5;
   margin-bottom: 1.5rem;
 }
 
 .logoText {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #c4a574;
+  color: #8b9a7f;
   margin: 0;
-  font-family: 'Georgia', serif;
+  font-family: 'Playfair Display', serif;
   letter-spacing: 1px;
 }
 
@@ -41,25 +41,25 @@
   background: transparent;
   cursor: pointer;
   border-radius: 8px;
-  color: #b8a896;
+  color: #6b6158;
   font-size: 0.95rem;
   font-weight: 500;
   transition: all 0.2s;
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  text-align: right;
+  text-align: left;
 }
 
 .navItem:hover {
-  background: rgba(196, 165, 116, 0.1);
-  color: #c4a574;
+  background: rgba(139, 154, 127, 0.08);
+  color: #8b9a7f;
 }
 
 .navItem.active {
-  background: #c4a574;
-  color: #2d1f1a;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  background: #a89dc9;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(168, 157, 201, 0.2);
 }
 
 .icon {
@@ -70,9 +70,9 @@
 
 .footer {
   padding: 1.5rem;
-  border-top: 1px solid rgba(196, 165, 116, 0.2);
+  border-top: 1px solid #e8dfd5;
   margin-top: auto;
   font-size: 0.8rem;
-  color: #8b7d73;
+  color: #9b8877;
   text-align: center;
 }

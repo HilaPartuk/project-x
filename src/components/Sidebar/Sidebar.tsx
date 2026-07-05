@@ -8,10 +8,10 @@ interface NavItemConfig {
 }
 
 const navItems: NavItemConfig[] = [
-  { id: 'dashboard', label: 'דשבורד', icon: '📊' },
-  { id: 'ideas', label: 'רעיונות', icon: '💡' },
-  { id: 'vision-board', label: 'לוח השראה', icon: '🎨' },
-  { id: 'roadmap', label: 'מפת דרכים', icon: '🗺️' },
+  { id: 'dashboard', label: 'Dashboard', icon: '📊' },
+  { id: 'ideas', label: 'Ideas', icon: '💡' },
+  { id: 'vision-board', label: 'Vision Board', icon: '🎨' },
+  { id: 'roadmap', label: 'Roadmap', icon: '🗺️' },
 ]
 
 export function Sidebar() {

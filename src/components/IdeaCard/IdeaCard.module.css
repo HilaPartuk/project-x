@@ -1,6 +1,6 @@
 .card {
   background: #fff;
-  border: 1px solid #d9cfc3;
+  border: 1px solid #e8dfd5;
   border-radius: 12px;
   padding: 1.75rem;
   transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -16,12 +16,12 @@
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #8b6f47 0%, #c4a574 50%, #8b6f47 100%);
+  background: linear-gradient(90deg, #8b9a7f 0%, #a89dc9 50%, #8b9a7f 100%);
 }
 
 .card:hover {
-  border-color: #c4a574;
-  box-shadow: 0 12px 28px rgba(196, 165, 116, 0.15);
+  border-color: #a89dc9;
+  box-shadow: 0 12px 28px rgba(168, 157, 201, 0.15);
   transform: translateY(-3px);
 }
 
@@ -35,21 +35,21 @@
 .title {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #2d1f1a;
+  color: #1a1815;
   margin: 0;
   flex: 1;
-  font-family: 'Georgia', serif;
+  font-family: 'Playfair Display', serif;
 }
 
 .tag {
   display: inline-block;
-  background: #ede8e3;
+  background: #f3ede4;
   color: #6b6158;
   padding: 0.35rem 0.85rem;
   border-radius: 20px;
   font-size: 0.75rem;
   font-weight: 500;
-  margin-right: 0.5rem;
+  margin-left: 0.5rem;
   white-space: nowrap;
 }
 
